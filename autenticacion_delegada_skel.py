@@ -1,49 +1,22 @@
 # -*- coding: utf-8 -*-
 
-#
-# CABECERA AQUI
-#
-'''GIW
-   Practica de autenticación delegada
-   Grupo 13
-   Adrián Martínez Jiménez
-   Lucas Segarra Fernández
-   Declaramos que esta soluci´on
-   es fruto exclusivamente de nuestro trabajo personal. No hemos sido
-   ayudados por ninguna otra persona ni hemos obtenido la soluci´on de
-   fuentes externas, y tampoco hemos compartido nuestra soluci´on con
-   nadie. Declaramos adem´as que no hemos realizado de manera deshonesta
-   ninguna otra actividad que pueda mejorar nuestros resultados
-   ni perjudicar los resultados de los dem´as.'''
-
 from bottle import run, get, request, response, route, post
-# Resto de importaciones
-
 import urllib2, urllib
 import hashlib
 import os
 import json
-# Credenciales.
-# https://developers.google.com/identity/protocols/OpenIDConnect#appsetup
-# Copiar los valores adecuados.
+
 CLIENT_ID     = "64556356867-83l64d75qv4egbh0lh5go1nslatldu3p.apps.googleusercontent.com"
 CLIENT_SECRET = "jZ6AMAO7TltKpSUZmXDWxgd6"
 REDIRECT_URI  = "http://localhost:8080/token"
-
-
-# Fichero de descubrimiento para obtener el 'authorization endpoint' y el
-# 'token endpoint'
-# https://developers.google.com/identity/protocols/OpenIDConnect#authenticatingtheuser
 DISCOVERY_DOC = "https://accounts.google.com/.well-known/openid-configuration"
-
-
-# Token validation endpoint para decodificar JWT
-# https://developers.google.com/identity/protocols/OpenIDConnect#validatinganidtoken
 TOKEN_VALIDATION_ENDPOINT = "https://www.googleapis.com/oauth2/v4/token"
 
+
+
 STATE =""
-@post('/uploader')
-def uploader(var):
+@post('/uploader/<user>')
+def uploader(user):
     upload = request.files.get('uploadedfile')
     if(not os.direxists("../archivos/"+var)):
         os.mkdir("../archivos/"+var)
@@ -68,7 +41,7 @@ def token():
         p = urllib2.urlopen("https://www.googleapis.com/oauth2/v3/tokeninfo?id_token="+m['id_token'])
         p = json.loads(p.read())
         return "<b>Bienvenido "+p['email']+'''</b>
-                <form enctype="multipart/form-data" action="uploader?var=+p['email'] " method="POST">
+                <form enctype="multipart/form-data" action="uploader?user=+p['email'] " method="POST">
                     <input name="uploadedfile" type="file" />
                     <input type="submit" value="Subir archivo" />
                 </form> '''
