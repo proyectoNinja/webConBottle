@@ -15,13 +15,13 @@ TOKEN_VALIDATION_ENDPOINT = "https://www.googleapis.com/oauth2/v4/token"
 
 
 STATE =""
-@post('/uploader/<user>')
-def uploader(user):
+@post('/uploader')
+def uploader():
+    email = request.forms.get('email')
+    print email
     upload = request.files.get('uploadedfile')
-    if(not os.direxists("../archivos/"+var)):
-        os.mkdir("../archivos/"+var)
-    upload.save("../archivos/"+var+"/"+upload.filename)
-    return "<b>"+upload.filename+" </b>"
+    upload.save("../archivos/"+upload.filename)
+    return "<b>"+"OK"+" </b>"
 
 @route('/')
 def login_google():
@@ -41,8 +41,9 @@ def token():
         p = urllib2.urlopen("https://www.googleapis.com/oauth2/v3/tokeninfo?id_token="+m['id_token'])
         p = json.loads(p.read())
         return "<b>Bienvenido "+p['email']+'''</b>
-                <form enctype="multipart/form-data" action="uploader?user=+p['email'] " method="POST">
+                <form enctype="multipart/form-data" action="uploader " method="POST">
                     <input name="uploadedfile" type="file" />
+                    <input type="hidden" name ="email" type="text" value='''+p['email']+'''>
                     <input type="submit" value="Subir archivo" />
                 </form> '''
 #quitar HTML con template
