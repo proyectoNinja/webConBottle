@@ -6,7 +6,7 @@ import hashlib
 import os
 import json
 
-CLIENT_ID     = "64556356867-83l64d75qv4egbh0lh5go1nslatldu3p.apps.googleusercontent.com"
+CLIENT_ID     = "1022856304800-ph8iuqc3rra0s7iac6ln81m083dcuvdv.apps.googleusercontent.com "
 CLIENT_SECRET = "jZ6AMAO7TltKpSUZmXDWxgd6"
 REDIRECT_URI  = "http://147.96.80.194:8080/token"
 DISCOVERY_DOC = "https://accounts.google.com/.well-known/openid-configuration"
