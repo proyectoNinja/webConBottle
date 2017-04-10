@@ -8,7 +8,7 @@ import json
 
 CLIENT_ID     = "64556356867-83l64d75qv4egbh0lh5go1nslatldu3p.apps.googleusercontent.com"
 CLIENT_SECRET = "jZ6AMAO7TltKpSUZmXDWxgd6"
-REDIRECT_URI  = "http://localhost:8080/token"
+REDIRECT_URI  = "http://147.96.80.194:8080/token"
 DISCOVERY_DOC = "https://accounts.google.com/.well-known/openid-configuration"
 TOKEN_VALIDATION_ENDPOINT = "https://www.googleapis.com/oauth2/v4/token"
 
@@ -52,4 +52,4 @@ def token():
 
 if __name__ == "__main__":
     # NO MODIFICAR LOS PARÁMETROS DE run()
-    run(host='localhost',port=8080,debug=True)
+    run(host='147.96.80.194',port=8080,debug=False)
