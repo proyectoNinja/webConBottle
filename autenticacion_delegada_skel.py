@@ -7,8 +7,8 @@ import os
 import json
 
 CLIENT_ID     = "1022856304800-ph8iuqc3rra0s7iac6ln81m083dcuvdv.apps.googleusercontent.com "
-CLIENT_SECRET = "jZ6AMAO7TltKpSUZmXDWxgd6"
-REDIRECT_URI  = "http://147.96.80.194:8080/token"
+CLIENT_SECRET = "P1juZRvd3EkQUz-hX9nkAJa6"
+REDIRECT_URI  = "http://mifulo.dacya.ucm.es:8080/token"
 DISCOVERY_DOC = "https://accounts.google.com/.well-known/openid-configuration"
 TOKEN_VALIDATION_ENDPOINT = "https://www.googleapis.com/oauth2/v4/token"
 
