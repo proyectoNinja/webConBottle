@@ -28,7 +28,8 @@ def login_google():
     state = hashlib.sha256(os.urandom(1024)).hexdigest()
     response.set_cookie('state', state)
     p = "https://accounts.google.com/o/oauth2/v2/auth?client_id="+CLIENT_ID+"&response_type=code&scope=openid%20email&redirect_uri="+REDIRECT_URI+"&state="+state
-    return template('google_login.tpl',enlace=p)
+    #return template('google_login.tpl',enlace=p)
+    return "<CENTER><a href=" + p +" ><button>Pulse aquí para autenticar con google </button></a></CENTER>"
 
 @get('/token')
 def token():
