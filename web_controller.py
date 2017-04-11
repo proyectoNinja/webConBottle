@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from bottle import run, get, request, response, route, post
+from bottle import run, get, request, response, route, post,template
 import urllib2, urllib
 import hashlib
 import os
@@ -21,7 +21,7 @@ def uploader():
     print email
     upload = request.files.get('uploadedfile')
     upload.save("../archivos/"+upload.filename)
-    return "<b>"+"OK"+" </b>"
+    return template('file_uploaded.tpl',user=email,filename=upload.filename)
 
 @route('/')
 def login_google():
