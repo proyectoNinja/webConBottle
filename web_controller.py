@@ -39,7 +39,7 @@ def token():
         m = json.loads(m.read())
         p = urllib2.urlopen("https://www.googleapis.com/oauth2/v3/tokeninfo?id_token="+m['id_token'])
         p = json.loads(p.read())
-	    return template('uploader.tpl',user=p['email'])
+	return template('uploader.tpl',user=p['email'])
     else:
         return template('error_login.tpl')
 
