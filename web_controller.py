@@ -41,7 +41,7 @@ def token():
         p = json.loads(p.read())
 	    return template('uploader.tpl',user=p['email'])
     else:
-        return template('error_login.tpl',user=p['email'])
+        return template('error_login.tpl')
 
 if __name__ == "__main__":
     run(host='147.96.80.194',port=80,debug=False)
