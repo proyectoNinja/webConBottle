@@ -5,6 +5,7 @@ import urllib2, urllib
 import hashlib
 import os
 import json
+import time
 
 CLIENT_ID     = "1022856304800-ph8iuqc3rra0s7iac6ln81m083dcuvdv.apps.googleusercontent.com"
 CLIENT_SECRET = "P1juZRvd3EkQUz-hX9nkAJa6"
@@ -12,14 +13,15 @@ REDIRECT_URI  = "http://mifulo.dacya.ucm.es:8080/token"
 DISCOVERY_DOC = "https://accounts.google.com/.well-known/openid-configuration"
 TOKEN_VALIDATION_ENDPOINT = "https://www.googleapis.com/oauth2/v4/token"
 
-
-
 @post('/uploader')
 def uploader():
     email = request.forms.get('email')
     print email
     upload = request.files.get('uploadedfile')
-    upload.save("../archivos/"+upload.filename)
+    dirName=email+"/"+str(time.time())
+    if not os.path.exists(dirName):
+        os.makedirs(dirName)
+    upload.save(dirName+upload.filename)
     return template('file_uploaded.tpl',user=email,filename=upload.filename)
 
 @route('/')
