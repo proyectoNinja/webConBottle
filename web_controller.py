@@ -22,6 +22,7 @@ def uploader():
     # if not os.path.exists(dirName):
     #     os.makedirs(dirName)
     # upload.save(dirName+upload.filename)
+    upload.save("../archivos"+upload.filename)
     print dirName
     return template('file_uploaded.tpl',user=email,filename=upload.filename)
 
