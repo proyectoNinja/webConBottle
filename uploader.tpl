@@ -31,7 +31,7 @@ p{
 	expreso para proporcionarle a la UCM NOMBREHOSPITAL
 	sus datos personales consistentes en registros y mediciones
 	de sus niveles médicos de COMPLETAR para la finalidad de 
-	COMPLETAR .
+	prevenir..COMPLETAR .
 
 	Le informamos de que sus datos seran tratados por dichas 
 	instituciones y podrá ejercer sus derechos de acceso, rectificación
