@@ -18,12 +18,10 @@ def uploader():
     email = request.forms.get('email')
     print email
     upload = request.files.get('uploadedfile')
-    dirName=email+"/"+str(time.time())
-    # if not os.path.exists(dirName):
-    #     os.makedirs(dirName)
-    # upload.save(dirName+upload.filename)
-    upload.save("../archivos"+upload.filename)
-    print dirName
+    dirName="../archivos"+email+"/"+str(time.time())
+    if not os.path.exists(dirName):
+        os.makedirs(dirName)
+    upload.save(dirName+upload.filename)
     return template('file_uploaded.tpl',user=email,filename=upload.filename)
 
 @route('/')
