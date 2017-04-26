@@ -1,22 +1,7 @@
 <DOCTYPE html>
 <html lang="es">
 <head>
-<style>
-body{background-color: gray;
-}
-h1{
-	color:black;
-	text-align:center;
-}
-h2{
-	color:red;
-	text-align:center;
-}
-p{
-	font-family:verdana;
-	font-size: 20 px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <b>Bienvenido {{user}} </b></head>
 <body>
@@ -26,7 +11,7 @@ p{
 		<input type="hidden" name="email" type="text" value="{{user}}">
 		<input type="submit" value="Upload file" />
 	</form>
-	<h2>Tratamiento de datos</h2>
+	<h3>Tratamiento de datos</h3>
 	<p>Subiendo un documento usted presta su consentimiento
 	expreso para proporcionarle a la UCM y al hospital NOMBREHOSPITAL,
 	sus datos personales consistentes en registros y mediciones

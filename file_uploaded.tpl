@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<tittle>Thank's {{user}}, {{filename}} was successfully uploaded!</tittle>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+<body>
+  <p>Thank's {{user}}, {{filename}} was successfully uploaded!</p>
+</body>
+
 </html>

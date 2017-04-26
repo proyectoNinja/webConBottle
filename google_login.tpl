@@ -1,19 +1,7 @@
 <DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-body{
-	background-color: lightblue;
-}
-h1{
-	color:white;
-	text-align: center;
-}
-p{
-	font-family: verdana;
-	font-size : 20px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<h1>glUCModel</h1>
@@ -25,4 +13,3 @@ p{
 	</CENTER>
 </body>
 </html>
-
