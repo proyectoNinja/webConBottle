@@ -22,7 +22,7 @@ p{
 <body>
 	<h1>Bienvenido {{user}}</h1>
 	<form enctype="multipart/form-data" action="uploader " method="POST">
-		<input name=uploadedfile" type="file" />
+		<input name="uploadedfile" type="file" />
 		<input type="hidden" name="email" type="text" value="{{user}}">
 		<input type="submit" value="Upload file" />
 	</form>
