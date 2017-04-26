@@ -18,6 +18,8 @@ def uploader():
     email = request.forms.get('email')
     print email
     upload = request.files.get('uploadedfile')
+    print upload
+    print type(upload)
     dirName="../archivos"+email+"/"+str(time.time())
     if not os.path.exists(dirName):
         os.makedirs(dirName)
