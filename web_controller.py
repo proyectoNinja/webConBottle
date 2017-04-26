@@ -21,7 +21,7 @@ def uploader():
     dirName="../archivos"+email+"/"+str(time.time())
     if not os.path.exists(dirName):
         os.makedirs(dirName)
-    upload.save(dirName+upload.filename)
+    upload.save(dirName+"/"+upload.filename)
     return template('file_uploaded.tpl',user=email,filename=upload.filename)
 
 @route('/')
