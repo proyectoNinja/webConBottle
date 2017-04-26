@@ -2,22 +2,22 @@ body {
   background-color: lightblue;
 }
 
-h1{
+h1 {
   color: black;
   text-align: center;
 }
 
-h2{
+h2 {
   color: red;
   text-align: center;
 }
 
-h3{
+h3 {
 	color:red;
 	text-align: center;
 }
 
-p{
+p {
   font-family: verdana;
   font-size: 20px;
 }
