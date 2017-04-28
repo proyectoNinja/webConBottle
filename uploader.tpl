@@ -15,7 +15,7 @@
 	<p>Subiendo un documento usted presta su
 		consentimiento expreso para proporcionarle
 		a la Universidad Complutense de Madrid,
-		a través de su grupo de investigación 
+		a través de su grupo de investigación
 		Adaptive and Bioinspired Systems Research Group,
 		 sus datos personales consistentes en registros y
 		 mediciones de sus niveles médicos de Glucosa y
@@ -29,7 +29,8 @@
 		, le informamos que sus datos personales
 		serán tratados y quedarán incorporados
 		en ficheros resposabilidad de la UCM,
-		con la finalidad de prevenir COMPLETAR,.</p>
+		con la finalidad de realizar tareas de
+		investigación .</p>
 
 		<p>Tales ficheros estań debidamente
 			registrados en la Agencia Española de
