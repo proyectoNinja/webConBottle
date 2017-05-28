@@ -1,12 +1,11 @@
 <DOCTYPE html>
 <html lang="es">
 <head>
-<link rel="stylesheet" type="text/css" href="/static/styles.css"/>
-</head>
-<b>Bienvenido {{user}} </b></head>
-<body>
+	<link rel="stylesheet" type="text/css" href="/static/styles.css"/>
 	<h1>glUCModel</h1>
-	
+</head>
+<body>
+	<b>Bienvenido {{user}} </b></head>
 	<form enctype="multipart/form-data" action="uploader" method="POST">
 		<input name="uploadedfile" type="file" />
 		<input type="hidden" name="email" type="text" value="{{user}}">
