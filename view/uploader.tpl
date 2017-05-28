@@ -10,10 +10,9 @@
 		<input type="hidden" name="email" type="text" value="{{user}}">
 
 		<select name="algo">
-	  	<option value="Metodo1">Volvo</option>
-	  	<option value="Metodo2">Saab</option>
-	  	<option value="Metodo3">Opel</option>
-	  	<option value="Metodo4">Audi</option>
+	  	<option value="kmeans">Kmeans</option>
+	  	<option value="agglomerative">Aglomerative Clustering</option>
+	  	<option value="hbdscan">hbdscan</option>
 		</select>
 
 		<input type="submit" value="Upload file" />
