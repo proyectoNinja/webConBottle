@@ -17,6 +17,7 @@ TOKEN_VALIDATION_ENDPOINT = "https://www.googleapis.com/oauth2/v4/token"
 def uploader():
     email = request.forms.get('email')
     upload = request.files.get('uploadedfile')
+    algo = request.forms.get('algo')
     if not upload is None:
         dirName="../archivos/"+email+"/"+str(time.time())
         os.makedirs(dirName)

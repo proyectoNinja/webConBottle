@@ -5,17 +5,18 @@
 </head>
 <b>Bienvenido {{user}} </b></head>
 <body>
-	<form enctype="multipart/form-data" action="uploader " method="POST">
+	<form enctype="multipart/form-data" action="uploader" method="POST">
 		<input name="uploadedfile" type="file" />
 		<input type="hidden" name="email" type="text" value="{{user}}">
-		<input type="submit" value="Upload file" />
 
-		<select>
+		<select name="algo">
 	  	<option value="Metodo1">Volvo</option>
 	  	<option value="Metodo2">Saab</option>
 	  	<option value="Metodo3">Opel</option>
 	  	<option value="Metodo4">Audi</option>
 		</select>
+
+		<input type="submit" value="Upload file" />
 
 	</form>
 
