@@ -43,5 +43,9 @@ def token():
     else:
         return template('error_login.tpl')
 
+@route('/static/<filepath:path>')
+def server_static(filepath):
+    return static_file(filepath,root="static")
+
 if __name__ == "__main__":
     run(host='147.96.80.194',port=80,debug=False)
