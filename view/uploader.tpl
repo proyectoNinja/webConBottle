@@ -5,12 +5,20 @@
 </head>
 <b>Bienvenido {{user}} </b></head>
 <body>
-	<h1>Bienvenido {{user}}</h1>
 	<form enctype="multipart/form-data" action="uploader " method="POST">
 		<input name="uploadedfile" type="file" />
 		<input type="hidden" name="email" type="text" value="{{user}}">
 		<input type="submit" value="Upload file" />
+
+		<select>
+	  	<option value="Metodo1">Volvo</option>
+	  	<option value="Metodo2">Saab</option>
+	  	<option value="Metodo3">Opel</option>
+	  	<option value="Metodo4">Audi</option>
+		</select>
+
 	</form>
+
 	<h3>Tratamiento de datos</h3>
 	<p>Subiendo un documento usted presta su
 		consentimiento expreso para proporcionarle
