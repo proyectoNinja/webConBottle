@@ -17,10 +17,13 @@ TOKEN_VALIDATION_ENDPOINT = "https://www.googleapis.com/oauth2/v4/token"
 def uploader():
     email = request.forms.get('email')
     upload = request.files.get('uploadedfile')
-    dirName="../archivos/"+email+"/"+str(time.time())
-    os.makedirs(dirName)
-    upload.save(dirName+"/"+upload.filename)
-    return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename)
+    if not upload is None:
+        dirName="../archivos/"+email+"/"+str(time.time())
+        os.makedirs(dirName)
+        upload.save(dirName+"/"+upload.filename)
+        return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename)
+    else:
+        return template('view/uploader.tpl',user=email)
 
 @route('/')
 def login_google():
