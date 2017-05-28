@@ -20,14 +20,14 @@ def uploader():
     dirName="../archivos/"+email+"/"+str(time.time())
     os.makedirs(dirName)
     upload.save(dirName+"/"+upload.filename)
-    return template('file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename)
+    return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename)
 
 @route('/')
 def login_google():
     state = hashlib.sha256(os.urandom(1024)).hexdigest()
     response.set_cookie('state', state)
     p = "https://accounts.google.com/o/oauth2/v2/auth?client_id="+CLIENT_ID+"&response_type=code&scope=openid%20email&redirect_uri="+REDIRECT_URI+"&state="+state
-    return template('google_login.tpl',enlace=p)
+    return template('view/google_login.tpl',enlace=p)
 
 @get('/token')
 def token():
@@ -39,9 +39,9 @@ def token():
         m = json.loads(m.read())
         p = urllib2.urlopen("https://www.googleapis.com/oauth2/v3/tokeninfo?id_token="+m['id_token'])
         p = json.loads(p.read())
-	return template('uploader.tpl',user=p['email'])
+	return template('view/uploader.tpl',user=p['email'])
     else:
-        return template('error_login.tpl')
+        return template('view/error_login.tpl')
 
 @route('/static/<filepath:path>')
 def server_static(filepath):
