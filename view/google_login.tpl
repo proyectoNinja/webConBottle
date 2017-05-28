@@ -1,7 +1,7 @@
 <DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="static/styles.css">
+<link rel="stylesheet" type="text/css" href="/static/styles.css"/>
 </head>
 <body>
 	<h1>glUCModel</h1>
