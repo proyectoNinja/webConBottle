@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from bottle import run, get, request, response, route, post,template
+from bottle import run, get, request, response, route, post,template,static_file
 import urllib2, urllib
 import hashlib
 import os
