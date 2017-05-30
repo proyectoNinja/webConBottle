@@ -15,7 +15,12 @@
 		<p/>
 		<p>
 			Necesitamos que se logee para relacionarle con sus mediciones ya registradas.
+		<p/>
+		<p>
 			Accediendo al portal, usted podra recibir predicciones sobre las mismas.
+		<p/>
+		<p>
+			Cada vez que envíe un fichero a nuestro servidor, este sera almacenado para posteriores predicciones.
 		<p/>
 	</CENTER>
 </body>
