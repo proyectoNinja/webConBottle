@@ -20,7 +20,7 @@
 
 	</form>
 
-	<h3>Tratamiento de datos</h3>
+	<h2>Tratamiento de datos</h2>
 	<p>Subiendo un documento usted presta su
 		consentimiento expreso para proporcionarle
 		a la Universidad Complutense de Madrid,
