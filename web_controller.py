@@ -54,7 +54,7 @@ def server_static(filepath):
 
 @route('/archivos/<filepath:path>')
 def serve_static(filepath):
-    return static_file(resto,root='../archivos')
+    return static_file(filepath,root='../archivos')
 
 if __name__ == "__main__":
     run(host='147.96.80.194',port=80,debug=False)
