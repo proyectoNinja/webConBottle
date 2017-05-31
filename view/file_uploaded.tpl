@@ -6,7 +6,7 @@
 </head>
 <body>
   <p>Thank's {{user}}, {{filename}} was successfully uploaded!</p>
-  <object data="../archivos/m.fuentes@ucm.es/1495280189.58">
+  <object data="../archivos/m.fuentes@ucm.es/1495280189.58/informe.pdf">
 </body>
 
 </html>
