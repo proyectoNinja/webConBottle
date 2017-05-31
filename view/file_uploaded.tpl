@@ -6,6 +6,7 @@
 </head>
 <body>
   <p>Thank's {{user}}, {{filename}} was successfully uploaded!</p>
+  <img src="/home/tfg/main/arhivos/{{rest}}">
 </body>
 
 </html>
