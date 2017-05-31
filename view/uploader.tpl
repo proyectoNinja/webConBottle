@@ -12,8 +12,8 @@
 
 		<select name="algo">
 	  	<option value="kmeans">KMeans</option>
-	  	<option value="agglomerative">Aglomerative Clustering</option>
-	  	<option value="hbdscan">HBDscan</option>
+	  	<option value="aglomerative">Aglomerative Clustering</option>
+	  	<option value="hbdscan">HBDSCAN</option>
 		</select>
 
 		<input type="submit" value="Upload file" />
