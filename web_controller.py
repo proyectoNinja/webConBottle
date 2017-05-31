@@ -23,7 +23,7 @@ def uploader():
         dirName="../archivos/"+email+"/"+str(time.time())
         os.makedirs(dirName)
         upload.save(dirName+"/"+upload.filename)
-        return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename)
+        return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,rest='m.fuentes@ucm.es/1495280189.58/informe.pdf')
     else:
         return template('view/uploader.tpl',user=email)
 
@@ -51,6 +51,10 @@ def token():
 @route('/static/<filepath:path>')
 def server_static(filepath):
     return static_file(filepath,root="static")
+
+@route('/home/tfg/main/archivos/<resto>')
+def serve_pictures(resto):
+    return static_file(resto,root='/home/tfg/main/archivos')
 
 if __name__ == "__main__":
     run(host='147.96.80.194',port=80,debug=False)
