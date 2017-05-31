@@ -16,6 +16,6 @@
 		Necesitamos que se logee para relacionarle con sus mediciones ya registradas.
 		Accediendo al portal, usted podrá recibir predicciones sobre las mismas.
 		Cada vez que envíe un fichero a nuestro servidor, este sera almacenado para posteriores predicciones.
-	<p/>
+	</p>
 </body>
 </html>
