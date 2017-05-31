@@ -20,10 +20,10 @@ def uploader():
     upload = request.files.get('uploadedfile')
     algo = request.forms.get('algo')
     if not upload is None:
-        dirName="../archivos/"+email+"/"+str(time.time())
-        os.makedirs(dirName)
-        upload.save(dirName+"/"+upload.filename)
-        return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf=dirName+"/"+upload.filename)
+        dirName="archivos/"+email+"/"+str(time.time())
+        os.makedirs("../"+dirName)
+        upload.save("../"dirName+"/"+upload.filename)
+        return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf=dirName+informe.pdf)
     else:
         return template('view/uploader.tpl',user=email)
 
