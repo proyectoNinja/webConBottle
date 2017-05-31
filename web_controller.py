@@ -52,9 +52,9 @@ def token():
 def server_static(filepath):
     return static_file(filepath,root="static")
 
-@route('/home/tfg/main/archivos/<resto>')
-def serve_pictures(resto):
-    return static_file(resto,root='/home/tfg/main/archivos')
+@route('/archivos/<filepath:path>')
+def serve_static(filepath):
+    return static_file(resto,root='../archivos')
 
 if __name__ == "__main__":
     run(host='147.96.80.194',port=80,debug=False)
