@@ -12,8 +12,6 @@
 		</a>
 		<p>
 			Bienvenido a glUCModel.
-		<p/>
-		<p>
 			Necesitamos que se logee para relacionarle con sus mediciones ya registradas.
 			Accediendo al portal, usted podra recibir predicciones sobre las mismas.
 			Cada vez que envíe un fichero a nuestro servidor, este sera almacenado para posteriores predicciones.
