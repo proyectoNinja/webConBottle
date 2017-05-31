@@ -23,7 +23,7 @@ def uploader():
         dirName="archivos/"+email+"/"+str(time.time())
         os.makedirs("../"+dirName)
         upload.save("../"+dirName+"/"+upload.filename)
-        return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf=dirName+informe.pdf)
+        return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf=dirName+"informe.pdf")
     else:
         return template('view/uploader.tpl',user=email)
 
