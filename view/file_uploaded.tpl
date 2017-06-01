@@ -5,9 +5,10 @@
   <h1>Análisis glucémico en tramos de 4 horas</h1>
 </head>
 <body>
-  <p>Thank's {{user}}, {{filename}} was successfully uploaded!</p>
+<!--  <p>Thank's {{user}}, {{filename}} was successfully uploaded!</p>
   <p>{{pdf}} should be /archivos/m.fuentes@ucm.es/1495280189.58/informe.pdf</p>
   <object  align="middle" width="1200" height="400" data="/archivos/m.fuentes@ucm.es/1495280189.58/informe.pdf">
+//-->
 </body>
 
 </html>
