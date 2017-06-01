@@ -3,7 +3,16 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="/static/styles.css"/>
 	<h1>Análisis glucémico en tramos de 4 horas</h1>
-
+	<script>
+	function change() {
+		if(document.getElementById("salgo").value=="HDBSCAN"){
+	    	document.getElementById("snucleos").disabled=true;
+			}
+    	else{
+	    	document.getElementById("snucleos").disabled=false;
+			}
+		}
+</script>
 </head>
 <body>
 	<b>Bienvenido {{user}} </b></head>
@@ -11,13 +20,13 @@
 		<input name="uploadedfile" type="file" />
 		<input type="hidden" name="email" type="text" value="{{user}}">
 
-		<select name="algo">
+		<select name="algo" id="salgo">
 	  	<option value="kmeans">KMeans</option>
 	  	<option value="aglomerative">Agglomerative Clustering</option>
 			<option value="hdbscan">HDBSCAN</option>
 		</select>
 
-		<select name="nucleos">
+		<select name="nucleos" id="snucleos">
 			<option value="0">Default</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
