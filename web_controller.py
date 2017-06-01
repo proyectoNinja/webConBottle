@@ -7,8 +7,7 @@ import os
 import json
 import time
 import sys
-sys.path.append('/../meanSerpentForestSRC')
-import src
+from ..meanSerpentForestSRC import mainWeb
 
 CLIENT_ID     = "1022856304800-ph8iuqc3rra0s7iac6ln81m083dcuvdv.apps.googleusercontent.com"
 CLIENT_SECRET = "P1juZRvd3EkQUz-hX9nkAJa6"
