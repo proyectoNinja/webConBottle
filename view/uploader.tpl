@@ -6,6 +6,7 @@
 	<script>
 	function change() {
 		if(document.getElementById("salgo").value=="hdbscan"){
+			 document.getElementById("snucleos").value="Default";
 	    	document.getElementById("snucleos").disabled=true;
 			}
     	else{
