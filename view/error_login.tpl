@@ -1,8 +1,8 @@
 <DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<link rel="stylesheet" type="text/css" href="/static/styles.css"/>
-	<h1>glUCModel</h1>
+	<h1>Análisis glucémico en tramos de 4 horas</h1>
 </head>
 <body>
 	<h2>Something didn't work</h2>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="/static/styles.css"/>
-  <h1>glUCModel</h1>
+  <h1>Análisis glucémico en tramos de 4 horas</h1>
 </head>
 <body>
   <p>Thank's {{user}}, {{filename}} was successfully uploaded!</p>

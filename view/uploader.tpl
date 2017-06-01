@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
 	<link rel="stylesheet" type="text/css" href="/static/styles.css"/>
-	<h1>glUCModel</h1>
+	<h1>Análisis glucémico en tramos de 4 horas</h1>
+
 </head>
 <body>
 	<b>Bienvenido {{user}} </b></head>
@@ -12,7 +13,8 @@
 
 		<select name="algo">
 	  	<option value="kmeans">KMeans</option>
-	  	<option value="aglomerative">Aglomerative Clustering</option>
+	  	<option value="aglomerative">Agglomerative Clustering</option>
+			<option value="hdbscan">HDBSCAN</option>
 		</select>
 
 		<select name="nucleos">
