@@ -20,7 +20,7 @@
 		<input name="uploadedfile" type="file" />
 		<input type="hidden" name="email" type="text" value="{{user}}">
 
-		<select name="algo" id="salgo">
+		<select name="algo" id="salgo" onchange="change()">
 	  	<option value="kmeans">KMeans</option>
 	  	<option value="aglomerative">Agglomerative Clustering</option>
 			<option value="hdbscan">HDBSCAN</option>
