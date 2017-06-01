@@ -5,7 +5,7 @@
 	<h1>Análisis glucémico en tramos de 4 horas</h1>
 	<script>
 	function change() {
-		if(document.getElementById("salgo").value=="HDBSCAN"){
+		if(document.getElementById("salgo").value=="hdbscan"){
 	    	document.getElementById("snucleos").disabled=true;
 			}
     	else{
