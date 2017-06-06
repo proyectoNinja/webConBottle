@@ -1,10 +1,14 @@
 body {
   color: black;
+  background-color: #f5fff5;
   background-color: white;
 }
 
 h1 {
   color: white;
+  background-color: #0066ff;
+  margin: inherit;
+  border-style: hidden;
   background-color: blue;
   border-style: hidden;
   border-color: blue;
@@ -16,7 +20,7 @@ h1 {
 
 h2 {
   color: red;
-  background-color: inherit;
+  background-color: black;
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.9em
@@ -25,15 +29,16 @@ h2 {
 
 p {
   color: black;
-  background-color: lightyellow;
-  border-style: inset;
-  border-color: white;
+  background-color: inherit;
+  border-style: hidden;
   width: inherit;
-  margin: 25 px;
-  padding: 25 px;
-  outline-style: double;
-  outline-color: red;
+  margin: 50px;
+  padding: 50px 50px;
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.0em;
+}
+a{
+  padding: 70px 0;
+  top: auto;
 }
