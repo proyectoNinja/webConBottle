@@ -1,28 +1,25 @@
 body {
   color: black;
   background-color: #f5fff5;
-  background-color: white;
 }
 
 h1 {
   color: white;
-  background-color: #0066ff;
+  background-color: #008CBA;
   margin: inherit;
-  border-style: hidden;
-  background-color: blue;
   border-style: hidden;
   border-color: blue;
   padding: 0px 50px 50px 0px;
   text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 2.50em;
+  font-family: Georgia, serif;
+  font-size: 2.00em;
 }
 
 h2 {
   color: red;
-  background-color: black;
+  background-color: grey;
   text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, serif;
   font-size: 1.9em
 }
 
@@ -32,9 +29,10 @@ p {
   background-color: inherit;
   border-style: hidden;
   width: inherit;
-  padding: 50px 50px;
+  height: 5%;
+  padding: 5px 50px;
   text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial Black", Gadget, sans-serif;
   font-size: 1.0em;
 }
 
@@ -44,5 +42,6 @@ p {
   margin-left: 50%;
   margin-top: 20px;
   padding: 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
   cursor: pointer;
 }
