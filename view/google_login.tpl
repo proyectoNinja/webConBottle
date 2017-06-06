@@ -10,8 +10,8 @@
 			</button>
 		</a>
 	<p>
-		Bienvenido a glUCModel.
-		Necesitamos que se logee para relacionarle con sus mediciones ya registradas.
+		Bienvenido, somos una plataforma que colabora con <a href="http://glucmodel.dacya.ucm.es/testing/">glUCModel</a> .
+		Necesitamos que se identifique para relacionarle con sus mediciones ya registradas.
 		Accediendo al portal, usted podrá recibir predicciones sobre las mismas.
 		Cada vez que envíe un fichero a nuestro servidor, este sera almacenado para posteriores predicciones.
 	</p>
