@@ -5,12 +5,10 @@
 	<h1>Análisis glucémico en tramos de 4 horas</h1>
 </head>
 <body>
-	<CENTER>
 		<a href={{enlace}}>
-			<button>Login with Google
+			<button class="button">Login with Google
 			</button>
 		</a>
-	</CENTER>
 	<p>
 		Bienvenido a glUCModel.
 		Necesitamos que se logee para relacionarle con sus mediciones ya registradas.
