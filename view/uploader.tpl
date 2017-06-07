@@ -30,13 +30,13 @@
 		<input name="uploadedfile" type="file" />
 		<input type="hidden" name="email" type="text" value="{{user}}">
 
-		<select class="b2" name="algo" id="salgo" onchange="change()">
+		<select  name="algo" id="salgo" onchange="change()">
 	  	<option value="kmeans">KMeans</option>
 	  	<option value="aglomerative">Agglomerative Clustering</option>
 			<option value="hdbscan">HDBSCAN</option>
 		</select>
 
-		<select class="b2" name="nucleos" id="snucleos">
+		<select name="nucleos" id="snucleos">
 			<option value="0">Default</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
