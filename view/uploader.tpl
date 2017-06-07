@@ -14,9 +14,9 @@
 			}
 		}
 		function accepted() {
-    document.getElementById("uploadButton").disabled = false;
-    document.getElementById("aceptButton").disabled = true;
-}
+    	document.getElementById("uploadButton").disabled = false;
+    	document.getElementById("aceptButton").disabled = true;
+		}
 </script>
 </head>
 <body>
@@ -57,7 +57,7 @@
 		</select>
 
 
-		<button class="b2" type="submit" id="uploadButton" disabled="true">Upload File</button>
+		<button disabled="true" class="b2" type="submit" id="uploadButton">Upload File</button>
 
 	</form>
 
