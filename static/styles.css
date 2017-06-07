@@ -9,7 +9,7 @@ h1 {
   margin: inherit;
   border-style: hidden;
   border-color: blue;
-  padding: 0px 50px 50px 0px;
+  padding: 0px 25px 25px 0px;
   text-align: left;
   font-family: Georgia, serif;
   font-size: 2.00em;
@@ -44,4 +44,29 @@ p {
   padding: 10px;
   font-family: "Arial Black", Gadget, sans-serif;
   cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #008CBA;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: #ADD8E6;
+}
+
+.active {
+    background-color: #A9A9A9;
 }
