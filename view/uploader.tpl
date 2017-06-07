@@ -26,13 +26,13 @@
 		<input name="uploadedfile" type="file" />
 		<input type="hidden" name="email" type="text" value="{{user}}">
 
-		<select name="algo" id="salgo" onchange="change()">
+		<select class="button" name="algo" id="salgo" onchange="change()">
 	  	<option value="kmeans">KMeans</option>
 	  	<option value="aglomerative">Agglomerative Clustering</option>
 			<option value="hdbscan">HDBSCAN</option>
 		</select>
 
-		<select name="nucleos" id="snucleos">
+		<select class="button" name="nucleos" id="snucleos">
 			<option value="0">Default</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -53,7 +53,7 @@
 		</select>
 
 
-		<input type="submit" value="Upload file" />
+		<input class="button" type="submit" value="Upload file" />
 
 	</form>
 
