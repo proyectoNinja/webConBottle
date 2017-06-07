@@ -52,6 +52,10 @@ p {
   font-family: "Arial Black", Gadget, sans-serif;
   cursor: pointer;
 }
+.b3{
+  color: white;
+  background-color: #008CBA;
+}
 
 ul {
     list-style-type: none;
@@ -59,9 +63,6 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #008CBA;
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 li{
   float: left;
