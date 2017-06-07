@@ -13,6 +13,10 @@
 	    	document.getElementById("snucleos").disabled=false;
 			}
 		}
+		function accepted() {
+    document.getElementById("uploadButton").disabled = false;
+    document.getElementById("aceptButton").disabled = true;
+}
 </script>
 </head>
 <body>
@@ -53,7 +57,7 @@
 		</select>
 
 
-		<input class="b2" type="submit" value="Upload file" />
+		<input class="b2" type="submit" value="Upload file" id="uploadButton" disabled="true"/>
 
 	</form>
 
@@ -76,16 +80,19 @@
 		serán tratados y quedarán incorporados
 		en ficheros resposabilidad de la UCM,
 		con la finalidad de realizar tareas de
-		investigación .</p>
-
-		<p>Tales ficheros estań debidamente
+		investigación .Tales ficheros estań debidamente
 			registrados en la Agencia Española de
-		Protección de Datos.
-		</p>
+		Protección de Datos.</p>
+
 
 	<p>Le informamos de que sus datos seran tratados por dichas
 	instituciones, y almacenados en ficheros y podrá ejercer sus derechos de acceso, rectificación
 	cancelación y opsición enviando una fotocopia de su DNI
 	a la dirección glucmodel@gmail.com</p>
+
+	<b>Para subir un archivo, usted debe aceptar las condiciones</b>
+
+	<input class="button" value="Acept terms"	onclick="accepted()" id="aceptButton" />
+
 </body>
 </html>
