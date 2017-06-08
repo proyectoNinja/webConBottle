@@ -26,10 +26,13 @@ def uploader():
         dirName="archivos/"+email+"/"+str(time.time())
         os.makedirs("../"+dirName)
         upload.save("../"+dirName+"/csv.txt")
-        src.mainWeb("../"+dirName+"/",metodo=algo,nucleos=nucleos)
-        return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
+        try:
+            src.mainWeb("../"+dirName+"/",metodo=algo,nucleos=nucleos)
+            return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
+        except ParserError:
+            return template('view/uploader.tpl',user=email,msg="Posible error de formato")
     else:
-        return template('view/uploader.tpl',user=email)
+        return template('view/uploader.tpl',user=email,msg="Por favor seleccione un archivo")
 
 @route('/')
 def login_google():
@@ -48,7 +51,7 @@ def token():
         m = json.loads(m.read())
         p = urllib2.urlopen("https://www.googleapis.com/oauth2/v3/tokeninfo?id_token="+m['id_token'])
         p = json.loads(p.read())
-	return template('view/uploader.tpl',user=p['email'])
+	return template('view/uploader.tpl',user=p['email'],msg='Hola')
     else:
         return template('view/error_login.tpl')
 
