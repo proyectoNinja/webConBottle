@@ -7,7 +7,8 @@ import os
 import json
 import time
 import sys
-#from ..meanSerpentForestSRC import mainWeb
+sys.path.append("..")
+from meanSerpentForestSRC import src
 
 CLIENT_ID     = "1022856304800-ph8iuqc3rra0s7iac6ln81m083dcuvdv.apps.googleusercontent.com"
 CLIENT_SECRET = "P1juZRvd3EkQUz-hX9nkAJa6"
@@ -25,7 +26,7 @@ def uploader():
         dirName="archivos/"+email+"/"+str(time.time())
         os.makedirs("../"+dirName)
         upload.save("../"+dirName+"/"+upload.filename)
-#        src.mainWeb("../"+dirName+"/",metodo=algo,nucleos=nucleos)
+        src.mainWeb("../"+dirName+"/",metodo=algo,nucleos=nucleos)
         return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
     else:
         return template('view/uploader.tpl',user=email)
