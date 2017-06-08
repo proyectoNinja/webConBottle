@@ -13,11 +13,7 @@
 	    	document.getElementById("snucleos").disabled=false;
 			}
 		}
-		function accepted() {
-    	document.getElementById("uploadButton").disabled = true;
-    	document.getElementById("aceptButton").disabled = true;
-			document.getElementById("aceptButton").value = "accepted";
-		}
+
 </script>
 </head>
 <body>
@@ -58,7 +54,7 @@
 		</select>
 
 
-		<input   type="button" id="uploadButton" value="Upload">
+		<button class="b2" type="submit" value="Upload file" id="uploadButton" disabled="true"/>
 
 	</form>
 
