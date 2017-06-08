@@ -54,7 +54,7 @@
 		</select>
 
 
-		<button  type="submit" value="Upload file" id="uploadButton" disabled="true"/>
+		<button  type="submit" value="Upload file" id="uploadButton"/>
 
 	</form>
 
@@ -89,6 +89,6 @@
 
 	<b>Para subir un archivo, usted debe aceptar las condiciones</b>
 
-	
+
 </body>
 </html>
