@@ -26,8 +26,13 @@ def uploader():
         dirName="archivos/"+email+"/"+str(time.time())
         os.makedirs("../"+dirName)
         upload.save("../"+dirName+"/csv.txt")
+        clientIP=request.environ.get('REMOTE_ADDR')
+        file=open("ip.txt","w")
+        file.write(clientIP)
+        file.close()
         try:
             src.mainWeb("../"+dirName+"/",metodo=algo,nucleos=nucleos)
+            shutil.rmtree("../"+dirName)
             return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
         except Exception:
             return template('view/uploader.tpl',user=email,msg="Posible error de formato")
@@ -51,7 +56,7 @@ def token():
         m = json.loads(m.read())
         p = urllib2.urlopen("https://www.googleapis.com/oauth2/v3/tokeninfo?id_token="+m['id_token'])
         p = json.loads(p.read())
-	return template('view/uploader.tpl',user=p['email'],msg='Hola')
+	return template('view/uploader.tpl',user=p['email'],msg='')
     else:
         return template('view/error_login.tpl')
 
