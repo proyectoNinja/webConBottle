@@ -56,6 +56,10 @@ p {
   color: white;
   background-color: #008CBA;
 }
+.disabled{
+  opacity: 0.6;
+  cursor: not-allowed;
+}
 
 ul {
     list-style-type: none;
