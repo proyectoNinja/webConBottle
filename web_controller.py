@@ -25,7 +25,7 @@ def uploader():
     if not upload is None:
         dirName="archivos/"+email+"/"+str(time.time())
         os.makedirs("../"+dirName)
-        upload.save("../"+dirName+"/"+upload.filename)
+        upload.save("../"+dirName+"/csv.txt")
         src.mainWeb("../"+dirName+"/",metodo=algo,nucleos=nucleos)
         return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
     else:

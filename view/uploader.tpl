@@ -87,7 +87,7 @@
 	cancelación y opsición enviando una fotocopia de su DNI
 	a la dirección glucmodel@gmail.com</p>
 
-	<b>Para subir un archivo, usted debe aceptar las condiciones</b>
+	
 
 
 </body>
