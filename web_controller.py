@@ -29,7 +29,7 @@ def uploader():
         try:
             src.mainWeb("../"+dirName+"/",metodo=algo,nucleos=nucleos)
             return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
-        except ParserError:
+        except Exception:
             return template('view/uploader.tpl',user=email,msg="Posible error de formato")
     else:
         return template('view/uploader.tpl',user=email,msg="Por favor seleccione un archivo")
