@@ -54,7 +54,7 @@
 		</select>
 
 
-		<button class="b2" type="submit" value="Upload file" id="uploadButton" disabled="true"/>
+		<button  type="submit" value="Upload file" id="uploadButton" disabled="true"/>
 
 	</form>
 
@@ -89,7 +89,6 @@
 
 	<b>Para subir un archivo, usted debe aceptar las condiciones</b>
 
-	<input type="button"  onclick="accepted()" id="aceptButton" value="Aceptar Condiciones">
-
+	
 </body>
 </html>
