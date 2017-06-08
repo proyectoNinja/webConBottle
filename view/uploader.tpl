@@ -54,7 +54,7 @@
 		</select>
 
 
-		<button  type="submit" value="Upload file" id="uploadButton"/>
+		<button  type="submit"  id="uploadButton"/>Upload File</button>
 
 	</form>
 
