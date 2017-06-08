@@ -14,8 +14,8 @@
 			}
 		}
 		function accepted() {
-    	document.getElementById("uploadButton").className = "b3";
-    	document.getElementById("aceptButton").disabled = "b3 disabled";
+    	document.getElementById("uploadButton").disabled = true;
+    	document.getElementById("aceptButton").disabled = true;
 			document.getElementById("aceptButton").value = "accepted";
 		}
 </script>
@@ -58,7 +58,7 @@
 		</select>
 
 
-		<input class="b3 disabled"  type="button" id="uploadButton" value="Upload">
+		<input   type="button" id="uploadButton" value="Upload">
 
 	</form>
 
@@ -93,7 +93,7 @@
 
 	<b>Para subir un archivo, usted debe aceptar las condiciones</b>
 
-	<input class="b3" type="button"  onclick="accepted()" id="aceptButton" value="Aceptar Condiciones">
+	<input type="button"  onclick="accepted()" id="aceptButton" value="Aceptar Condiciones">
 
 </body>
 </html>
