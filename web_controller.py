@@ -37,8 +37,16 @@ def uploader():
         try:
             src.mainWeb("/home/tfg/main/"+dirName+"/",metodo=algo,nucleos=nucleos)
             return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
-        except Exception:
+        except Exception as ex:
             #shutil.rmtree("../"+dirName)
+            file=open("error.txt","w")
+            file.write(type(ex))
+            file.write(exp.args)
+            file.write("/home/tfg/main/"+dirName+"/")
+            file.write(algo)
+            file.write(nucleos)
+            path=os.getcwd()
+            file.write(path)
             return template('view/uploader.tpl',user=email,msg="Posible error de formato")
     else:
         return template('view/uploader.tpl',user=email,msg="Por favor seleccione un archivo")
