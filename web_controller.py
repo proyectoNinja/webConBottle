@@ -40,8 +40,8 @@ def uploader():
         except Exception as ex:
             #shutil.rmtree("../"+dirName)
             file=open("error.txt","w")
-            file.write(type(ex))
-            file.write(exp.args)
+            file.write(str(type(ex)))
+            file.write(str(exp.args))
             file.write("/home/tfg/main/"+dirName+"/")
             file.write(algo)
             file.write(nucleos)
