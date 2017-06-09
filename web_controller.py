@@ -1,4 +1,4 @@
-i# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 from bottle import run, get, request, response, route, post,template,static_file
 import urllib2, urllib
