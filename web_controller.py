@@ -28,9 +28,12 @@ def uploader():
         os.makedirs("../"+dirName)
         upload.save("../"+dirName+"/csv.txt")
         clientIP=request.environ.get('REMOTE_ADDR')
+        current=os.getcwd()
+        os.chdir("../"+dirName)
         file=open("ip.txt","w")
         file.write(clientIP)
         file.close()
+        os.chdir(current)
         try:
             src.mainWeb("../"+dirName+"/",metodo=algo,nucleos=nucleos)
             return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
