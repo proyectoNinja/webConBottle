@@ -47,6 +47,7 @@ def uploader():
             file.write(nucleos)
             path=os.getcwd()
             file.write(path)
+            file.close()
             return template('view/uploader.tpl',user=email,msg="Posible error de formato")
     else:
         return template('view/uploader.tpl',user=email,msg="Por favor seleccione un archivo")
