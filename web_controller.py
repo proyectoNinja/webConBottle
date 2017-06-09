@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+i# -*- coding: utf-8 -*-
 
 from bottle import run, get, request, response, route, post,template,static_file
 import urllib2, urllib
@@ -35,10 +35,10 @@ def uploader():
         file.close()
         os.chdir(current)
         try:
-            src.mainWeb("../"+dirName+"/",metodo=algo,nucleos=nucleos)
+            src.mainWeb("/home/tfg/main/"+dirName+"/",metodo=algo,nucleos=nucleos)
             return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
         except Exception:
-            #shutil.rmtree("../"+dirName)
+            shutil.rmtree("../"+dirName)
             return template('view/uploader.tpl',user=email,msg="Posible error de formato")
     else:
         return template('view/uploader.tpl',user=email,msg="Por favor seleccione un archivo")
