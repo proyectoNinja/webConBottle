@@ -41,7 +41,7 @@ def uploader():
             #shutil.rmtree("../"+dirName)
             file=open("error.txt","w")
             file.write(str(type(ex)))
-            file.write(str(exp.args))
+            file.write(str(ex.args))
             file.write("/home/tfg/main/"+dirName+"/")
             file.write(algo)
             file.write(nucleos)
