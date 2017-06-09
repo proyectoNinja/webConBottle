@@ -38,7 +38,7 @@ def uploader():
             src.mainWeb("/home/tfg/main/"+dirName+"/",metodo=algo,nucleos=int(nucleos))
             return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
         except Exception as ex:
-            #shutil.rmtree("../"+dirName)
+            shutil.rmtree("../"+dirName)
             file=open("error.txt","w")
             file.write(str(type(ex)))
             file.write('\n')
