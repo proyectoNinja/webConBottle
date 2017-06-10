@@ -15,7 +15,7 @@
 		}
 		function acceptTerms(){
     document.getElementById("uploadButton").disabled = false;
-    document.getElementById("acceptBut").value = "Accepted";
+    document.getElementById("acceptBut").value = "Aceptadas";
     document.getElementById("acceptBut").disabled = true;
 		}
 		function showsnackbar(){
@@ -101,7 +101,7 @@
 
 	<b>{{msg}}</b>
 
-<div id="snackbar" class="" hidden=true>Analizando su fichero..</div>
+<div id="snackbar" class="snack" hidden=true>Analizando su fichero..</div>
 
 </body>
 </html>
