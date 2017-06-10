@@ -24,7 +24,7 @@ def uploader():
     algo = request.forms.get('algo')
     nucleos = request.forms.get('nucleos')
     numNucleos = 0
-    if not nucleos is None:
+    if nucleos is not None:
         numNucleos=int(nucleos)
     if not upload is None:
         dirName="archivos/"+email+"/"+str(time.time())
