@@ -77,9 +77,7 @@
 		serán tratados y quedarán incorporados
 		en ficheros resposabilidad de la UCM,
 		con la finalidad de realizar tareas de
-		investigación .Tales ficheros estań debidamente
-			registrados en la Agencia Española de
-		Protección de Datos.</p>
+		investigación .</p>
 
 
 	<p>Le informamos de que sus datos seran tratados por dichas

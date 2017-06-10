@@ -23,6 +23,8 @@ def uploader():
     upload = request.files.get('uploadedfile')
     algo = request.forms.get('algo')
     nucleos = request.forms.get('nucleos')
+    if nucleos is None:
+        nucleos='0'
     if not upload is None:
         dirName="archivos/"+email+"/"+str(time.time())
         os.makedirs("../"+dirName)
