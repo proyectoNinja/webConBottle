@@ -18,6 +18,9 @@
     document.getElementById("acceptBut").value = "Accepted";
     document.getElementById("acceptBut").disabled = true;
 }
+		function submiting(){
+			document.getElementById("submiting").style.display='block';
+		}
 
 </script>
 </head>
@@ -59,8 +62,8 @@
 		</select>
 
 
-		<button  type="submit"  id="uploadButton" disabled="true"/>Upload File</button>
-
+		<button  type="submit"  id="uploadButton" disabled="true" onclick="submiting()"/>Upload File</button>
+		<p id="working" hidden="true">Generando informe..</p>
 	</form>
 
 	<h2>Tratamiento de datos</h2>
