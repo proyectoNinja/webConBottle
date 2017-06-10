@@ -23,8 +23,9 @@ def uploader():
     upload = request.files.get('uploadedfile')
     algo = request.forms.get('algo')
     nucleos = request.forms.get('nucleos')
-    if nucleos is None:
-        nucleos='0'
+    numNucleos = 0
+    if not nucleos is None:
+        numNucleos=int(nucleos)
     if not upload is None:
         dirName="archivos/"+email+"/"+str(time.time())
         os.makedirs("../"+dirName)
@@ -37,7 +38,7 @@ def uploader():
         file.close()
         os.chdir(current)
         try:
-            src.mainWeb("/home/tfg/main/"+dirName+"/",metodo=algo,nucleos=int(nucleos))
+            src.mainWeb("/home/tfg/main/"+dirName+"/",metodo=algo,nucleos=numNucleos)
             return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
         except Exception as ex:
             shutil.rmtree("../"+dirName)
