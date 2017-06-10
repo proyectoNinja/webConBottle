@@ -51,7 +51,7 @@ def uploader():
             file.write('\n')
             file.write(algo)
             file.write('\n')
-            file.write(numNucleos)
+            file.write(str(numNucleos))
             file.write('\n')
             path=os.getcwd()
             file.write(path)
