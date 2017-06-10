@@ -19,7 +19,7 @@
     document.getElementById("acceptBut").disabled = true;
 }
 		function submiting(){
-			document.getElementById("submiting").style.display='block';
+			document.getElementById("working").style.display='block';
 		}
 
 </script>
