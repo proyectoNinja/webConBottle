@@ -66,6 +66,7 @@
 
 		<button  type="submit"  id="uploadButton" disabled="true" onclick="showsnackbar()"/>Upload File</button>
 
+
 	</form>
 
 	<h2>Tratamiento de datos</h2>
@@ -100,7 +101,7 @@
 
 	<b>{{msg}}</b>
 
-	<div id="snackbar" hidden=true>Analizando su fichero..</div>
+<div id="snackbar" class="" hidden=true>Analizando su fichero..</div>
 
 </body>
 </html>
