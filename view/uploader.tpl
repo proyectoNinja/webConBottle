@@ -100,7 +100,7 @@
 
 	<b>{{msg}}</b>
 
-	<div id="snackbar">Analizando su fichero..</div>
+	<div id="snackbar" class="snackbar">Analizando su fichero..</div>
 
 </body>
 </html>
