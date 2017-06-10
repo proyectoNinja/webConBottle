@@ -20,8 +20,8 @@
 		}
 		function showsnackbar(){
 			var x = document.getElementById("snackbar")
-    	x.className = "show";
-    	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+    	x.hidden=false;
+    	setTimeout(function(){ x.hidden = true; }, 5000);
 		}
 
 </script>
@@ -100,7 +100,7 @@
 
 	<b>{{msg}}</b>
 
-	<div id="snackbar" class="snackbar">Analizando su fichero..</div>
+	<div id="snackbar" hidden=true>Analizando su fichero..</div>
 
 </body>
 </html>
