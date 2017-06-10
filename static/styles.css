@@ -86,7 +86,7 @@ li a:hover:not(.active) {
     background-color: #A9A9A9;
 }
 
-#snackbar{
+snackbar{
     min-width: 250px;
     margin-left: -125px;
     background-color: #333;
