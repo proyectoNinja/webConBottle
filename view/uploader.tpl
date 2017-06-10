@@ -13,6 +13,11 @@
 	    	document.getElementById("snucleos").disabled=false;
 			}
 		}
+		function acceptTerms(){
+    document.getElementById("uploadButton").disabled = false;
+    document.getElementById("acceptBut").value = "Accepted";
+    document.getElementById("acceptBut").disabled = true;
+}
 
 </script>
 </head>
@@ -54,7 +59,7 @@
 		</select>
 
 
-		<button  type="submit"  id="uploadButton"/>Upload File</button>
+		<button  type="submit"  id="uploadButton" disabled="true"/>Upload File</button>
 
 	</form>
 
@@ -84,6 +89,9 @@
 	instituciones, y almacenados en ficheros y podrá ejercer sus derechos de acceso, rectificación
 	cancelación y opsición enviando una fotocopia de su DNI
 	a la dirección glucmodel@gmail.com</p>
+
+	<b>Para subir un documento debe aceptar nuestras condiciones legales</b>
+	<input id="acceptBut" type="button" value="Acceptar condiciones" onclick="acceptTerms()">
 
 	<b>{{msg}}</b>
 
