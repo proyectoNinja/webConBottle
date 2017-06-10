@@ -53,6 +53,8 @@ def uploader():
             file.write('\n')
             file.write(nucleos)
             file.write('\n')
+            file.write(str(type(nucleos)))
+            file.write('\n')
             path=os.getcwd()
             file.write(path)
             file.close()
