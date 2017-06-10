@@ -17,9 +17,11 @@
     document.getElementById("uploadButton").disabled = false;
     document.getElementById("acceptBut").value = "Accepted";
     document.getElementById("acceptBut").disabled = true;
-}
-		function submiting(){
-			document.getElementById("working").style.display='block';
+		}
+		function showsnackbar(){
+			var x = document.getElementById("snackbar")
+    	x.className = "show";
+    	setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
 		}
 
 </script>
@@ -62,8 +64,8 @@
 		</select>
 
 
-		<button  type="submit"  id="uploadButton" disabled="true" onclick="submiting()"/>Upload File</button>
-		<p id="working" hidden="true">Generando informe..</p>
+		<button  type="submit"  id="uploadButton" disabled="true" onclick="showsnackbar()"/>Upload File</button>
+
 	</form>
 
 	<h2>Tratamiento de datos</h2>
@@ -98,6 +100,7 @@
 
 	<b>{{msg}}</b>
 
+	<div id="snackbar">Analizando su fichero..</div>
 
 </body>
 </html>
