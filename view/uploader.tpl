@@ -19,9 +19,9 @@
     document.getElementById("acceptBut").disabled = true;
 		}
 		function showsnackbar(){
-			var x = document.getElementById("snack")
-    	x.className="show";
-    	setTimeout(function(){ x.className = x.className.replace("show",""); }, 5000);
+			var x = document.getElementById("snackbar")
+			x.hidden=false;
+   		setTimeout(function(){ x.hidden = true; }, 5000);
 		}
 
 </script>
@@ -101,7 +101,7 @@
 
 	<b>{{msg}}</b>
 
-<div id="snack" class="snackbar">Analizando su fichero..</div>
+<div id="snackbar" class="hidden">Analizando su fichero..</div>
 
 </body>
 </html>
