@@ -20,8 +20,8 @@
 		}
 		function showsnackbar(){
 			var x = document.getElementById("snackbar")
-    	x.hidden=false;
-    	setTimeout(function(){ x.hidden = true; }, 5000);
+    	x.className="show";
+    	setTimeout(function(){ x.className = x.className.replace("show",""); }, 5000);
 		}
 
 </script>
