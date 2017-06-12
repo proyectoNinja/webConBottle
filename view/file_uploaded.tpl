@@ -11,7 +11,7 @@
     <li><a href="http://glucmodel.dacya.ucm.es/testing/">glUCModel</a></li>
   </ul>
 <!--/archivos/m.fuentes@ucm.es/1495280189.58/informe.pdf should be {{pdf}} -->
-<object   data="{{pdf}}">
+<object   height="500" data="{{pdf}}">
 </body>
 
 </html>
