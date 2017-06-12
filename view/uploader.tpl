@@ -38,7 +38,7 @@
 	<ul>
 		<li><a class="active" href="http://mifulo.dacya.ucm.es/token">Home</a></li>
 		<li><a href="http://mifulo.dacya.ucm.es">LogOut</a></li>
-		<li><a href="archivos/{{user}}"</a></li>
+		<li><a href="archivos/{{user}}">Download</a></li>
 		<li><a href="http://glucmodel.dacya.ucm.es/testing/">glUCModel</a></li>
 	</ul>
 	<b>Bienvenido {{user}} </b></head>
