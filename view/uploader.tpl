@@ -19,7 +19,7 @@
     document.getElementById("acceptBut").disabled = true;
 		}
 		function showsnackbar(){
-			var x = document.getElementById("snackbar")
+			var x = document.getElementById("snack")
     	x.className="show";
     	setTimeout(function(){ x.className = x.className.replace("show",""); }, 5000);
 		}
@@ -101,7 +101,7 @@
 
 	<b>{{msg}}</b>
 
-<div id="snackbar">Analizando su fichero..</div>
+<div id="snack" class="snackbar">Analizando su fichero..</div>
 
 </body>
 </html>
