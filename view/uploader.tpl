@@ -20,7 +20,7 @@
 		}
 		function showsnackbar() {
     	myVar = setTimeout(showPage, 3);
-			myVar = setTimeout(hidePage, 3000);
+			myVar = setTimeout(hidePage, 5000);
 		}
 
 		function showPage() {
