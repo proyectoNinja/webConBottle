@@ -18,10 +18,18 @@
     document.getElementById("acceptBut").value = "Aceptadas";
     document.getElementById("acceptBut").disabled = true;
 		}
-		function showsnackbar(){
-			var x = document.getElementById("snackbar")
-			x.hidden=false;
-   		setTimeout(function(){ x.hidden = true; }, 5000);
+		function showsnackbar() {
+    	myVar = setTimeout(showPage, 3);
+			myVar = setTimeout(hidePage, 3000);
+		}
+
+		function showPage() {
+  	document.getElementById("loader").style.display = "none";
+  	document.getElementById("myDiv").style.display = "block";
+		}
+
+		function hidePage(){
+			document.getElementById("myDiv").style.display = "none";
 		}
 
 </script>
@@ -101,7 +109,13 @@
 
 	<b>{{msg}}</b>
 
-<div id="snackbar" hidden="true">Analizando su fichero..</div>
+	<div id="loader"></div>
+
+	<div style="display:none;" id="myDiv" class="animate-bottom">
+		<h2>Permanezca a la espera</h2>
+		<p>Analizando sus datos..</p>
+	</div>
+
 
 </body>
 </html>
