@@ -14,7 +14,8 @@ h1 {
   border-color: blue;
   padding: 0px 25px 25px 0px;
   text-align: left;
-  font-family: Georgia, serif;
+  font-weight: bold;
+  font-family: Helvetica;
   font-size: 2.00em;
 }
 
@@ -22,7 +23,8 @@ h2 {
   color: red;
   background-color: grey;
   text-align: left;
-  font-family: Georgia, serif;
+  font-weight: bold;
+  font-family: Helvetica;
   font-size: 1.9em
 }
 
@@ -36,7 +38,8 @@ p {
   padding: 5px 50px;
   resize: none;
   text-align: justify;
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+  font-family: Helvetica;
   font-size: 1.0em;
 }
 
@@ -56,7 +59,8 @@ object{
   margin-left: 50%;
   margin-top: 20px;
   padding: 10px;
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+  font-family: Helvetica;
   cursor: pointer;
 }
 .b2{
@@ -64,7 +68,8 @@ object{
   background: #008CBA;
   background: linear-gradient(#045FB4, #58ACFA);
   padding: 5px;
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+  font-family: Helvetica;
   cursor: pointer;
 }
 .b3{
