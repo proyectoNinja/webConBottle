@@ -101,8 +101,8 @@
 
 	<p>Le informamos de que sus datos seran tratados por dichas
 	instituciones, y almacenados en ficheros y podrá ejercer sus derechos de acceso, rectificación
-	cancelación y opsición enviando una fotocopia de su DNI
-	a la dirección glucmodel@gmail.com</p>
+	cancelación y oposición enviando una fotocopia de su DNI
+	a la dirección glucmodel@ucm.es</p>
 
 	<b>Para subir un documento debe aceptar nuestras condiciones legales</b>
 	<input id="acceptBut" type="button" value="Acceptar condiciones" onclick="acceptTerms()">
