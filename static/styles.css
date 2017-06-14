@@ -1,11 +1,13 @@
 body {
   color: black;
   background-color: #f5fff5;
+  resize: none;
 }
 
 h1 {
   color: white;
-  background-color: #008CBA;
+  /*background-color: #008CBA;*/
+  background: #008CBA;
   background: linear-gradient(#045FB4, #58ACFA);
   margin: inherit;
   border-style: hidden;
