@@ -50,7 +50,8 @@ object{
 
 .button {
   color: white;
-  background-color: #008CBA;
+  background: #008CBA;
+  background: linear-gradient(#045FB4, #58ACFA);
   margin-left: 50%;
   margin-top: 20px;
   padding: 10px;
@@ -59,7 +60,8 @@ object{
 }
 .b2{
   color: white;
-  background-color: #008CBA;
+  background: #008CBA;
+  background: linear-gradient(#045FB4, #58ACFA);
   padding: 5px;
   font-family: "Arial Black", Gadget, sans-serif;
   cursor: pointer;
@@ -78,7 +80,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #008CBA;
+    background: #008CBA;
+    background: linear-gradient(#045FB4, #58ACFA);
 }
 li{
   float: left;
