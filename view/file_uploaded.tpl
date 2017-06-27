@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="shortcut icon" type="image/png" href="https://github.com/mappolo/Ingenieria-Web-UCM/blob/master/IW-Metaproject/web/iw-master/src/main/webapp/resources/images/web/favicon.ico"/>
   <link rel="stylesheet" type="text/css" href="/static/styles.css"/>
   <h1>Análisis glucémico en tramos de 4 horas</h1>
 </head>
