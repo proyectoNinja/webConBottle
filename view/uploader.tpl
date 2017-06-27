@@ -105,8 +105,11 @@
 		cancelación y oposición enviando una fotocopia de su DNI
 		a la dirección glucmodel@ucm.es</p>
 
-		<b>Para subir un documento debe aceptar nuestras condiciones legales</b>
-		<input id="acceptBut" type="button" value="Acceptar condiciones" onclick="acceptTerms()">
+		<div>
+			<b>Para subir un documento debe aceptar nuestras condiciones legales</b>
+			<input id="acceptBut" type="button" value="Acceptar condiciones" onclick="acceptTerms()">
+		</div>
+
 
 		<b>{{msg}}</b>
 
