@@ -39,6 +39,10 @@ def uploader():
         os.chdir(current)
         try:
             nuevonombre=src.mainWeb("/home/tfg/main/"+dirName+"/",metodo=algo,nucleos=numNucleos,nombreArchivo=upload.filename)
+            file=open("nombre.txt","w")
+            file.write(str(type(nuevonombre)))
+            file.write(str(nuevonombre))
+            file.close()
             return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/"+str(nuevonombre))
         except Exception as ex:
             shutil.rmtree("../"+dirName)
