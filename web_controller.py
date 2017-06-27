@@ -38,8 +38,8 @@ def uploader():
         file.close()
         os.chdir(current)
         try:
-            src.mainWeb("/home/tfg/main/"+dirName+"/",metodo=algo,nucleos=numNucleos)
-            return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/informe.pdf")
+            nuevonombre=src.mainWeb("/home/tfg/main/"+dirName+"/",metodo=algo,nucleos=numNucleos,nombreArchivo=upload.filename)
+            return template('view/file_uploaded.tpl',user=email.split('@')[0],filename=upload.filename,pdf="/"+dirName+"/"+nuevonombre)
         except Exception as ex:
             shutil.rmtree("../"+dirName)
             file=open("error.txt","w")
