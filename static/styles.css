@@ -52,6 +52,10 @@ object{
     position: absolute;
 }
 
+div.ex1{
+  padding: 25px 0px 0px 0px;
+}
+
 .button {
   color: white;
   background: #008CBA;
