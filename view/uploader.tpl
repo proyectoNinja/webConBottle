@@ -78,7 +78,7 @@
 			<b>Para subir un documento debe aceptar nuestras condiciones legales</b>
 			<input id="acceptBut" type="button" value="Acceptar condiciones" onclick="acceptTerms()">
 		</div>
-
+		<b>{{msg}}</b>
 	</form>
 
 	<h2>Tratamiento de datos</h2>
@@ -112,13 +112,14 @@
 
 
 
-		<b>{{msg}}</b>
 
-		<div id="loader"></div>
+		<div class="ex1">
+			<div id="loader"></div>
 
-		<div style="display:none;" id="myDiv" class="animate-bottom">
-			<h2>Permanezca a la espera</h2>
-			<p>Analizando sus datos..</p>
+			<div style="display:none;margin: 25px 0px 0px 0px;" id="myDiv" class="animate-bottom">
+				<h2>Permanezca a la espera</h2>
+				<p>Analizando sus datos..</p>
+			</div>
 		</div>
 	</div>
 
