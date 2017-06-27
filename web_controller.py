@@ -43,6 +43,8 @@ def uploader():
         except Exception as ex:
             shutil.rmtree("../"+dirName)
             file=open("error.txt","w")
+            file.write(type(nuevonombre))
+            file.write('\n')
             file.write(str(type(ex)))
             file.write('\n')
             file.write(str(ex.args))
