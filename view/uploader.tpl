@@ -32,6 +32,11 @@
 			document.getElementById("myDiv").style.display = "none";
 		}
 
+		function showPopWindow() {
+    alert("Analizando sus datos");
+		}
+
+
 </script>
 </head>
 <body>
@@ -72,7 +77,7 @@
 		</select>
 
 
-		<button  type="submit"  id="uploadButton" disabled="true" onclick="showsnackbar()"/>Upload File</button>
+		<button  type="submit"  id="uploadButton" disabled="true" onclick="showPopWindow()"/>Upload File</button>
 
 		<div>
 			<b>Para subir un documento debe aceptar nuestras condiciones legales</b>
@@ -109,18 +114,6 @@
 		cancelación y oposición enviando una fotocopia de su DNI
 		a la dirección glucmodel@ucm.es</p>
 
-
-
-
-
-		<div class="ex1">
-			<div id="loader"></div>
-
-			<div style="display:none;margin: 25px 0px 0px 0px;" id="myDiv" class="animate-bottom">
-				<h2>Permanezca a la espera</h2>
-				<p>Analizando sus datos..</p>
-			</div>
-		</div>
 	</div>
 
 
