@@ -74,6 +74,10 @@
 
 		<button  type="submit"  id="uploadButton" disabled="true" onclick="showsnackbar()"/>Upload File</button>
 
+		<div>
+			<b>Para subir un documento debe aceptar nuestras condiciones legales</b>
+			<input id="acceptBut" type="button" value="Acceptar condiciones" onclick="acceptTerms()">
+		</div>
 
 	</form>
 
@@ -105,10 +109,7 @@
 		cancelación y oposición enviando una fotocopia de su DNI
 		a la dirección glucmodel@ucm.es</p>
 
-		<div>
-			<b>Para subir un documento debe aceptar nuestras condiciones legales</b>
-			<input id="acceptBut" type="button" value="Acceptar condiciones" onclick="acceptTerms()">
-		</div>
+
 
 
 		<b>{{msg}}</b>
