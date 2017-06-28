@@ -9,7 +9,7 @@
 	<ul>
 		<li><a href="http://mifulo.dacya.ucm.es">LogOut</a></li>
 		<li><a href="http://glucmodel.dacya.ucm.es/testing/">glUCModel</a></li>
-		<li><a class="active" href="http://glucmodel.dacya.ucm.es/about/">About</a></li>
+		<li><a class="active" href="http://mifulo.dacya.ucm.es/about/">About</a></li>
 	</ul>
 	<h1>Acerca del acceso a los datos</h1>
 	<p>Si es ustede administrador, acceda por ssh al servidor, dispondrá de la información

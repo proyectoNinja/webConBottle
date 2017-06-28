@@ -45,7 +45,7 @@
 		<li><a class="active" href="http://mifulo.dacya.ucm.es/token">Home</a></li>
 		<li><a href="http://mifulo.dacya.ucm.es">LogOut</a></li>
 		<li><a href="http://glucmodel.dacya.ucm.es/testing/">glUCModel</a></li>
-		<li><a href="http://glucmodel.dacya.ucm.es/about/">About</a></li>
+		<li><a href="http://mifulo.dacya.ucm.es/about/">About</a></li>
 	</ul>
 	<b>Bienvenido {{user}} </b></head>
 	<form enctype="multipart/form-data" action="uploader" method="POST">
