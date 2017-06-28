@@ -9,6 +9,7 @@
 	<ul>
 		<li><a class="active" href="http://mifulo.dacya.ucm.es">LogIn</a></li>
 		<li><a href="http://glucmodel.dacya.ucm.es/testing/">glUCModel</a></li>
+		<li><a href="http://glucmodel.dacya.ucm.es/about/">About</a></li>
 	</ul>
 		<a href={{enlace}}>
 			<button class="button">Login with Google

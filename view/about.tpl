@@ -9,9 +9,14 @@
 	<ul>
 		<li><a href="http://mifulo.dacya.ucm.es">LogOut</a></li>
 		<li><a href="http://glucmodel.dacya.ucm.es/testing/">glUCModel</a></li>
-		<li><a href="http://glucmodel.dacya.ucm.es/about/">About</a></li>
+		<li><a class="active" href="http://glucmodel.dacya.ucm.es/about/">About</a></li>
 	</ul>
-	<h2>Something didn't work</h2>
-	<p>Probable cause: Google refused conecction with you</p>
+	<h1>Acerca del acceso a los datos</h1>
+	<p>Si es ustede administrador, acceda por ssh al servidor, dispondrá de la información
+  recogida en el directorio "home/main/archivos".<br>
+
+  Si no lo es, para acceder a sus datos, o a sus derechos sobre los mismos, envíe un correo
+  electrónico, adjuntando una fotocopia de su DNI a la dirección glucmodel@ucm.es.
+  </p>
 </body>
 </html>
