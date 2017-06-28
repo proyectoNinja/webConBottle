@@ -9,7 +9,7 @@
 	<ul>
 		<li><a href="http://mifulo.dacya.ucm.es">LogOut</a></li>
 		<li><a href="http://glucmodel.dacya.ucm.es/testing/">glUCModel</a></li>
-		<li><a href="http://mifulo.dacya.ucm.es/about/">About</a></li>
+		<li><a href="http://mifulo.dacya.ucm.es/about">About</a></li>
 	</ul>
 	<h2>Something didn't work</h2>
 	<p>Probable cause: Google refused conecction with you</p>

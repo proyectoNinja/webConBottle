@@ -10,7 +10,7 @@
     <li><a href="javascript:history.back()">Home</a></li>
     <li><a href="http://mifulo.dacya.ucm.es">LogOut</a></li>
     <li><a href="http://glucmodel.dacya.ucm.es/testing/">glUCModel</a></li>
-    <li><a href="http://mifulo.dacya.ucm.es/about/">About</a></li>
+    <li><a href="http://mifulo.dacya.ucm.es/about">About</a></li>
   </ul>
 <!--/archivos/m.fuentes@ucm.es/1495280189.58/informe.pdf should be {{pdf}} -->
 <object   height="500" data="{{pdf}}">
