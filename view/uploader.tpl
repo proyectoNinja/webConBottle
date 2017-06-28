@@ -77,7 +77,7 @@
 			<option value="16">16</option>
 		</select>
 
-			<p>Elija formato de salida</p>
+			<b>Elija formato de salida</b>
 			<select name="formato" id="formato">
 				<option value="pdf">PDF</option>
 				<option value="tar">Archivo comprimido</option>
