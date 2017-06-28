@@ -75,8 +75,14 @@
 			<option value="14">14</option>
 			<option value="15">15</option>
 			<option value="16">16</option>
-
 		</select>
+		<div>
+			<p>Elija formato de salida</p>
+			<select name="formato" id="formato">
+				<option value="pdf">PDF</option>
+				<option value="tar">Archivo comprimido</option>
+			</select>
+		</div>
 
 
 		<button  type="submit"  id="uploadButton" disabled="true" onclick="showPopWindow()"/>Upload File</button>
