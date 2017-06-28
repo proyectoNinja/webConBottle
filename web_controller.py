@@ -75,7 +75,7 @@ def login_google():
     return template('view/google_login.tpl',enlace=p)
 
 @route('/about')
-def acerca():
+def about():
     return template('view/about.tpl')
 
 @get('/token')
