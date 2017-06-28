@@ -74,7 +74,7 @@ def login_google():
     p = "https://accounts.google.com/o/oauth2/v2/auth?client_id="+CLIENT_ID+"&response_type=code&scope=openid%20email&redirect_uri="+REDIRECT_URI+"&state="+state
     return template('view/google_login.tpl',enlace=p)
 
-@get('/about')
+@route('/about')
 def acerca():
     return template('view/about.tpl')
 
